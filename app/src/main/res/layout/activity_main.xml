@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/gray">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/passfoto"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="100dp">
+
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pasfoto" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muhammad Topan Kurniawan"
+        android:layout_below="@+id/passfoto"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="muhammadtopankurniawan@gmail.com"
+        android:layout_below="@+id/passfoto"
+        android:layout_gravity="center"
+        android:paddingTop="5dp"
+        android:textSize="12dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11/01/2002"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="9dp"
+        android:layout_marginBottom="30dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emial"
+                android:text="EMAIL"
+                android:layout_alignParentLeft="true"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="muhammadtopankurniawan@gmail.com"
+                android:id="@+id/isiemail"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usernama"
+                android:text="USERNAME"
+                android:layout_below="@+id/emial"
+                android:paddingTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emial"
+                android:text="Topan"
+                android:id="@+id/isiusernama"
+                android:paddingTop="15dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nama"
+                android:text="NAME"
+                android:layout_below="@+id/usernama"
+                android:paddingTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usernama"
+                android:text="Muhammad Topan Kurniawan"
+                android:id="@+id/isinama"
+                android:paddingTop="15dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/surname"
+                android:text="SURNAME"
+                android:layout_below="@+id/nama"
+                android:paddingTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama"
+                android:text="M Topan K"
+                android:id="@+id/isisurename"
+                android:paddingTop="15dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/city"
+                android:text="NAME"
+                android:layout_below="@+id/surname"
+                android:paddingTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/surname"
+                android:text="Jakarta"
+                android:id="@+id/isicity"
+                android:paddingTop="15dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sex"
+                android:text="SEX"
+                android:layout_below="@+id/city"
+                android:paddingTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/city"
+                android:text="Laki - Laki"
+                android:id="@+id/isisex"
+                android:paddingTop="15dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ulangtahun"
+                android:text="BIRTH DAY"
+                android:layout_below="@+id/sex"
+                android:paddingTop="15dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@id/sex"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="2dp"
+                android:layout_toStartOf="@+id/isiulangtahun"
+                android:src="@drawable/bookmark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sex"
+                android:text="11 Januari 2002"
+                android:id="@+id/isiulangtahun"
+                android:paddingTop="15dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>
